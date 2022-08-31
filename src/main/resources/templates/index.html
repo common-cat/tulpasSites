@@ -1,0 +1,38 @@
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <link th:href="@{css/main.css}" type="text/css" rel="stylesheet">
+    <link th:href="@{css/index.css}" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <script src="js/vue_.js"></script>
+    <h1 class="title">TULPA花名册</h1>
+    <div id="searchBind">
+        <input id="search" v-model="searchdata" type="text" @keyup.enter.native="search()">
+        <div id="searchButton" @click="search()"></div>
+    </div>
+    <hr>
+    <script>
+        var ajax=new XMLHttpRequest();
+        var app = Vue.createApp(
+            {
+                data() {
+                    return {
+                        searchdata: "",
+                    }
+                },
+                methods: {
+                    search() {
+                        window.location.href ="http://"+ window.location.host + "/search" + "/" + this.searchdata;
+                    }
+                    //上传搜索的内容
+                }
+            }
+        );
+        app.mount("#searchBind");
+
+    </script>
+</body>
+
+</html>

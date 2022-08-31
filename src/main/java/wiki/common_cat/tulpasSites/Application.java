@@ -5,7 +5,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class Application {
+    static Commander commander;
     public static void main(String[] args){
-        SpringApplication.run(Application.class,args);
+        commander=new Commander();
     }
 }

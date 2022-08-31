@@ -1,0 +1,21 @@
+.contents{
+    border-radius: 5px;
+    border: 1px solid rgb(180, 179, 179);
+    background-color: whitesmoke;
+    padding: 5px;
+}
+.title{
+    text-align: center;
+    font-size: 55pt;
+    color: rgb(75, 171, 255);
+}
+body{
+    
+    color: rgb(109, 109, 109);
+    font-family: "OPPOSans";
+    background-color: whitesmoke;
+}
+@font-face {
+    font-family: "OPPOSans";
+    src: url("/font/OPPOSans-R.ttf");
+}

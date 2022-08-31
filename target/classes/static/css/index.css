@@ -1,0 +1,28 @@
+#searchButton{
+    position: absolute;
+    left: 80%;
+    width: 10%;
+    height: 80px;
+    display: inline-block;
+    background-color: rgb(134, 108, 250);
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+#search{
+    display: inline-block;
+    position: absolute;
+    left: 10%;
+    width: 70%;
+    height: 80px;
+    font-size: 35pt;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    color: rgb(109, 109, 109);
+    border: 2px solid rgb(92, 92, 92);
+    background-color: rgb(222, 222, 222);
+    padding: 5px;
+}
+#searchBind{
+    min-height: 100px;
+
+}
